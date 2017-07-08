@@ -21,3 +21,26 @@ good.sort(function nood (a, b) {
   return 0;
 });
 document.write(good);
+
+//выбор нужного элемента 't' 'f';
+var arr = ['q','e','t','f - ','v','m'];
+document.write(arr.slice(-4,-2));
+
+//удаление елементов 't'   'f' + добовление элементов;
+var roody = ['q','e','t','f','v','m'];
+alert(roody.splice(2,2,'Novorai','Artem',45,234,534,466,));
+document.write(roody);
+
+var array = new Array(10);
+
+for(var i = 0; i < array.length; i++) {
+  array[i] = new Array(10);
+}
+
+for(var j = 0; j < array.length; j++) {
+  for(var n = 0; n < array[j].length; n++){
+    array[j][n] = j*n
+  }
+}
+
+alert(array[5][5]);
